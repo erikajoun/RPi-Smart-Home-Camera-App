@@ -80,7 +80,7 @@ export default function AppHeader() {
                         variant="h6"
                         noWrap
                     >
-                        Home Smart Camera Viewer
+                        Smart Home Camera Viewer
                     </Typography>
                     <div className={classes.grow} />
                     <div className={classes.sectionDesktop}>
