@@ -15,6 +15,8 @@ export default function AppHeader() {
     const context = useAppContext()
     const classes = useStyles()
 
+    const githubLink = 'https://github.com/erikajoun/RPi-Smart-Home-Camera-App'
+
     const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null)
     const isMobileMenuOpen = Boolean(mobileMoreAnchorEl)
 
@@ -46,7 +48,14 @@ export default function AppHeader() {
             onClose={handleMobileMenuClose}
         >
             <MenuItem>
-                <IconButton color="inherit">
+                <IconButton
+                    color="inherit"
+                    onClick={(e) => {
+                        e.preventDefault()
+                        window.open(githubLink, '_blank') ||
+                            window.location.replace(githubLink)
+                    }}
+                >
                     <GitHubIcon />
                 </IconButton>
                 <p>Github</p>
@@ -75,7 +84,14 @@ export default function AppHeader() {
                     </Typography>
                     <div className={classes.grow} />
                     <div className={classes.sectionDesktop}>
-                        <IconButton color="inherit">
+                        <IconButton
+                            color="inherit"
+                            onClick={(e) => {
+                                e.preventDefault()
+                                window.open(githubLink, '_blank') ||
+                                    window.location.replace(githubLink)
+                            }}
+                        >
                             <GitHubIcon />
                         </IconButton>
                         {context.state.page === 'main' ? (
