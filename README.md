@@ -6,7 +6,7 @@ Can be used indoors or right outside the home for surveilance or for autonomous 
 ## List of Current Features
 ### Frontend Client-Side Application
 - View the live camera stream from the Raspberry Pi and the object detection images as they are uploaded
-- Use the searchbar to look for photos of specific objects in the object detection gallery
+- Use the searchbar to search for photos of specific objects in the object detection gallery
 - Option to take pictures manually of the content currently shown on the camera stream and download the photo to your device
 
 ![main page with camera stream and gallery](screenshots/screenshot_main.png)
@@ -19,7 +19,7 @@ Can be used indoors or right outside the home for surveilance or for autonomous 
 ![photo preview without boxes](screenshots/screenshot_no_boxes.png)
 
 
-- Mobile-first design with a responsive gallery
+- Mobile view:
 
 ![connect page mobile view](screenshots/screenshot_connect.png)
 ![main page mobile view](screenshots/screenshot_mobile.png)
